@@ -14,6 +14,12 @@
   <h1>Veridawn</h1>
   <p class="lead">Plan photos around the sun, the moon and the Milky Way.</p>
 
+  <!-- Nothing loads from YouTube until play is pressed (see privacy.html). Without scripts this is a plain link. -->
+  <a class="video" href="https://www.youtube.com/watch?v=sLHSqeIcKg0" data-id="sLHSqeIcKg0" aria-label="Play the Veridawn video">
+    <img src="video-poster.jpg" width="1280" height="720" alt="A compass ring with the sun's direction over a lighthouse">
+    <span class="play"></span>
+  </a>
+
   <p>Stand where you'll shoot and take a photo: Veridawn remembers where the camera pointed. Drag through the day,
     or through the year, and watch the sun and the moon cross your photo, behind the real horizon.</p>
 
@@ -45,5 +51,20 @@
   <footer><a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of use</a> ·
     Map data © OpenStreetMap contributors. © Veridawn.</footer>
 </main>
+<script>
+  document.querySelector('.video').addEventListener('click', function (event) {
+    event.preventDefault();
+    var frame = document.createElement('iframe');
+    frame.src = 'https://www.youtube-nocookie.com/embed/' + this.dataset.id + '?autoplay=1&rel=0';
+    frame.title = 'Veridawn video';
+    frame.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    frame.referrerPolicy = 'strict-origin-when-cross-origin';
+    frame.allowFullscreen = true;
+    var box = document.createElement('div');
+    box.className = 'video';
+    box.appendChild(frame);
+    this.replaceWith(box);
+  });
+</script>
 </body>
 </html>

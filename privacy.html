@@ -13,7 +13,7 @@
   <p><a href="./">← Veridawn</a></p>
   <h1>Veridawn — Privacy Policy</h1>
 
-  <p><em>Effective: 18 October 2026. Contact: <a href="mailto:veridawn.app@gmail.com">veridawn.app@gmail.com</a>.</em></p>
+  <p><em>Effective: 2 November 2026. Contact: <a href="mailto:veridawn.app@gmail.com">veridawn.app@gmail.com</a>.</em></p>
 
   <p>Veridawn plans photos around the sun and the moon. It has <strong>no accounts and no servers of its own</strong>.
     Your photos, scenes and plans stay on your phone.</p>
@@ -66,6 +66,33 @@
 
   <h2>No tracking</h2>
   <p>There is no analytics, no advertising, no tracking and no crash reporting to any server.</p>
+
+  <h2>Web version</h2>
+  <p>The web version of Veridawn works the same way, with these differences:</p>
+  <ul>
+    <li><strong>Place names.</strong> When <strong>Settings → Name places</strong> is on, a place's coordinates are sent to
+      OpenStreetMap's Nominatim service to look up its name.</li>
+    <li><strong>Terrain and maps.</strong> Terrain comes from AWS Terrain Tiles (Amazon S3, the
+      <code>elevation-tiles-prod</code> bucket), and map tiles from OpenStreetMap's tile servers. The requests show which
+      area is being downloaded.</li>
+    <li><strong>Hosting.</strong> The site is hosted on Firebase Hosting (Google), which keeps standard server logs,
+      including IP addresses.</li>
+    <li><strong>Fonts.</strong> Some symbol characters are drawn with fonts fetched from Google Fonts
+      (<code>fonts.gstatic.com</code>); those requests show your IP address to Google. Once fetched, the fonts are kept
+      in the browser.</li>
+    <li><strong>Your data.</strong> Everything you save stays in this browser on this device. Nothing is backed up unless
+      you make a file with <strong>Settings → Back up</strong>.</li>
+    <li><strong>No tracking.</strong> There is no analytics or tracking. The diagnostics screen stays on the device; it is
+      copied only if you tap Copy.</li>
+  </ul>
+
+  <h2>This website</h2>
+  <ul>
+    <li><strong>Video.</strong> Nothing is loaded from YouTube until you press play on the home page. The video then plays
+      from YouTube (a Google service), which sees your IP address and applies Google's terms.</li>
+    <li><strong>Hosting.</strong> This website is hosted on GitHub Pages, which keeps standard server logs, including IP
+      addresses.</li>
+  </ul>
 
   <h2>Children</h2>
   <p>The app is not directed at children and collects no personal data from anyone.</p>

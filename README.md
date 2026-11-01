@@ -1,51 +1,57 @@
-# Veridawn website
+<p align="center">
+  <img src="banner.png" alt="Veridawn. Plan the light: sun, moon, Milky Way" width="720">
+</p>
 
-The public site for the Veridawn app, served by GitHub Pages at **https://ficcc.github.io/veridawn/**.
+<p align="center">
+  <strong>Know where the light will be, before you leave home.</strong><br>
+  A free Android app for planning photos around the sun, the moon and the Milky Way.
+</p>
 
-| File | What it is |
-|---|---|
-| `index.html` | Home: what the app does, the Google Play link, privacy, support, feedback. The app's Settings → Support → Project page opens it. |
-| `privacy.html` | The privacy policy. Its URL goes in Play Console → App content → Privacy policy. |
-| `terms.html` | Terms of use: predictions are a guide, outdoor safety, tips, third-party data, no warranty. |
-| `404.html` | Shown for any missing page. |
-| `style.css` | Shared styles: charcoal and gold, light and dark. |
-| `icon.png` | The Valley V icon (a copy of `docs/store/icon-512.png` in the app repo). |
-| `.nojekyll` | Tells GitHub Pages to serve the files as they are. |
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=sLHSqeIcKg0"><img src="video-poster.jpg" alt="Watch the Veridawn video on YouTube" width="720"></a><br>
+  <a href="https://www.youtube.com/watch?v=sLHSqeIcKg0"><strong>▶ Watch the video</strong></a>
+</p>
 
-Contact address on every page: **veridawn.app@gmail.com**.
+---
 
-## Publish (once)
+## See the shot before it happens
 
-1. In this folder:
+Stand where you'll shoot and take a photo: Veridawn remembers where the camera pointed. Then drag through the day, or hold the time bar to move through the year, and watch the sun and the moon cross your photo, behind the real horizon of hills and buildings.
 
-   ```bash
-   git init -b main
-   ```
+## Plan
 
-   ```bash
-   git add -A && git commit -m "Veridawn website"
-   ```
+- **Map:** the sun and moon directions for any day, with a compass ring and a 24-hour dial
+- **Light times:** golden hour, blue hour and twilight, with sunrise and sunset behind the terrain
+- **Find:** the dates the sun or the moon lines up with a peak, a tower or a lighthouse
+- **Milky Way:** the best nights to go out
+- **Reminders:** an alert before a plan, and a home-screen widget with the next good light
 
-   ```bash
-   git remote add origin https://github.com/ficcc/veridawn.git
-   ```
+## Shoot
 
-   ```bash
-   git push -u origin main
-   ```
+- **Live camera:** the sun's path drawn over the view, with a framing grid and a target that shows where the sun will be
+- **Exact direction:** tap the sun in a photo to line everything up
 
-2. On GitHub: **ficcc/veridawn → Settings → Pages → Build and deployment → Deploy from a branch → `main` / `/ (root)` → Save.**
-3. After a minute or two, check:
-   - https://ficcc.github.io/veridawn/
-   - https://ficcc.github.io/veridawn/privacy.html
-   - https://ficcc.github.io/veridawn/terms.html
-4. In Play Console:
-   - **App content → Privacy policy:** `https://ficcc.github.io/veridawn/privacy.html`
-   - **Store settings → Store listing contact details:** email `veridawn.app@gmail.com`, website `https://ficcc.github.io/veridawn/`
+## Kit
 
-## Rules for this site
+Depth of field, hyperfocal distance, exposure, star trails, time-lapse, meteor showers and more. Each tool gives you the answer first.
 
-- **No external payment links** (Ko-fi, PayPal, Buy Me a Coffee…) on `index.html`. The app links to it, and Google Play's payments policy bars in-app links that lead to a payment method other than Play billing, indirect ones included. Tips stay in the app, through Google Play.
-- Keep `privacy.html` in step with the app's in-app Privacy screen and `docs/privacy-policy.md` in the app repo. When either changes, change the date at the top.
-- The source of truth is the `site/` folder in the app repo (`ficcc/goldenhour`). Edit it there, then copy it here and push.
-- The terms are a plain-language starting point, not legal advice.
+## Private by design
+
+No account, no ads, no analytics. Your photos, scenes and plans stay on your phone. The [privacy policy](https://ficcc.github.io/veridawn/privacy.html) lists everything that leaves it.
+
+## Get Veridawn
+
+Veridawn is in closed testing on Google Play, and the public release is on its way. To try it early, email [veridawn.app@gmail.com](mailto:veridawn.app@gmail.com).
+
+Veridawn is free and made by one person. If it helps you catch the light, you can leave a tip in the app or tell a friend.
+
+---
+
+<p align="center">
+  <a href="https://ficcc.github.io/veridawn/">Website</a> ·
+  <a href="https://ficcc.github.io/veridawn/privacy.html">Privacy</a> ·
+  <a href="https://ficcc.github.io/veridawn/terms.html">Terms</a> ·
+  <a href="mailto:veridawn.app@gmail.com">Feedback</a>
+</p>
+
+<p align="center"><sub>This repository hosts the Veridawn website. Notes on maintaining it are in <a href="SITE.md">SITE.md</a>.</sub></p>
